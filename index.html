@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>여행 준비물 점검 목록</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/4265d65fff.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class='wrapper'>
+		<div class='content'>
+			<h2>여행 준비물은 챙겼니?</h2>
+			<form>
+				<input type="text" id="item" autofocus="true" onkeyup="if(window.event.keyCode==13){addList()}">
+				<button type="button" id="add" class="addBtn" onclick="addList()"><i class="fa-solid fa-plus"></i></button>
+				<input style='display: none;'>
+			</form>
+			<div id="itemList"></div>
+		</div>    
+	</div>
+	
+	
+	<script src="js/script.js"></script>
+	</html>
